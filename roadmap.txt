@@ -23,4 +23,10 @@ https://www.udemy.com/course/blockchain-theory-101/?LSNPUBID=JVFxdTr9V80&ranEAID
 4. Transaction.
 5. Account types. 
 6. Smart contract.
+------------
+
+3. Learn Ethereum
+- offical website https://ethereum.org/en/developers/docs/
+- https://www.youtube.com/watch?v=gjwr-7PgpN8
+
 
