@@ -2,6 +2,7 @@ Web 3.0 developer roadmap 2022:
 
 1. Learn The Fundamentals Of Blockchain
 2. What is a Decentralized Application?
+3. Web3.0 and Solidity Development roadmap: learn What is Ethereum and How it Works [Ethereum]
 3. Learn Web3.js
 4. Learn Ethers.js
 5. How do I Test my Decentralized Application?
@@ -14,4 +15,12 @@ https://www.udemy.com/course/blockchain-theory-101/?LSNPUBID=JVFxdTr9V80&ranEAID
 - blockchain developer types:
 1. blockchain core developer: build blockchain client.
 2. blockchain App developer: build application on top of blockchain client.
+
+- basic blockchain concepts: 
+1. proof of work (PoW) ans prrof of stack (PoS).
+2. public/private keys.
+3. Wallet.
+4. Transaction.
+5. Account types. 
+6. Smart contract.
 
