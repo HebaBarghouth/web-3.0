@@ -1,2 +1,7 @@
 Web 3.0 developer roadmap 2022:
 
+1. Learn The Fundamentals Of Blockchain
+2. What is a Decentralized Application?
+3. Learn Web3.js
+4. Learn Ethers.js
+5. How do I Test my Decentralized Application?
