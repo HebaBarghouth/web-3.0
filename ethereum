@@ -5,6 +5,8 @@ ACCOUNT TYPES:
 1. Externally-owned – controlled by anyone with the private keys
 2. Contract – a smart contract deployed to the network, controlled by code.
 
+https://ethereum.org/static/19443ab40f108c985fb95b07bac29bcb/302a4/accounts.png
+
 
 ACCOUNT vs WALLET
 An account is not a wallet. An account is the keypair for a user-owned Ethereum account. 
