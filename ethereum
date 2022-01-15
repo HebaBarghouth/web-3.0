@@ -21,3 +21,8 @@ Regular transactions: a transaction from one wallet to another.
 Contract deployment transactions: a transaction without a 'to' address, where the data field is used for the contract code.
 
 BLOCKS:
+Blocks are batches of transactions with a hash of the previous block in the chain. 
+This links blocks together (in a chain) because hashes are cryptographically derived from the block data. 
+This prevents fraud, because one change in any block in history would invalidate all the following blocks as all subsequent hashes 
+would change and everyone running the blockchain would notice.
+
