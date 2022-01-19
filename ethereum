@@ -30,5 +30,57 @@ Once a block is put together (mined) by some miner on the network, it is propaga
 all nodes add this block to the end of their blockchain, and mining continues. 
 The exact block-assembly (mining) process and commitment/consensus process is currently specified by Ethereum’s “proof-of-work” protocol.
 
+WHAT'S IN A BLOCK?
+timestamp – the time when the block was mined.
+blockNumber – the length of the blockchain in blocks.
+baseFeePerGas - the minimum fee per gas required for a transaction to be included in the block.
+difficulty – the effort required to mine the block.
+mixHash – a unique identifier for that block.
+parentHash – the unique identifier for the block that came before (this is how blocks are linked in a chain).
+transactions – the transactions included in the block.
+stateRoot – the entire state of the system: account balances, contract storage, contract code and account nonces are inside.
+nonce – a hash that, when combined with the mixHash, proves that the block has gone through proof-of-work.
+
+BLOCK TIME
+Block time refers to the time it takes to mine a new block. In Ethereum, the average block time is between 12 to 14 seconds and is evaluated after each block. 
+The expected block time is set as a constant at the protocol level and is used to protect the network's security when the miners add more computational power.
+
+BLOCK SIZE
+A final important note is that blocks themselves are bounded in size. 
+Each block has a target size of 15 million gas but the size of blocks will increase or decrease in accordance with network demands, 
+up until the block limit of 30 million gas (2x target block size). 
+The total amount of gas expended by all transactions in the block must be less than the block gas limit. 
 
 
+ETHEREUM VIRTUAL MACHINE (EVM)
+Ethereum is a distributed state machine. 
+Ethereum's state is a large data structure which holds not only all accounts and balances, but a machine state, 
+which can change from block to block according to a pre-defined set of rules, 
+and which can execute arbitrary machine code. 
+The specific rules of changing state from block to block are defined by the EVM.
+https://ethereum.org/static/e8aca8381c7b3b40c44bf8882d4ab930/302a4/evm.png
+
+State
+In the context of Ethereum, the state is an enormous data structure called a modified Merkle Patricia Trie, 
+which keeps all accounts linked by hashes and reducible to a single root hash stored on the blockchain.
+
+Transactions
+Transactions are cryptographically signed instructions from accounts. There are two types of transactions: t
+hose which result in message calls and those which result in contract creation.
+Contract creation results in the creation of a new contract account containing compiled smart contract bytecode. 
+Whenever another account makes a message call to that contract, it executes its bytecode.
+
+EVM INSTRUCTIONS
+The EVM executes as a stack machine.
+Compiled smart contract bytecode executes as a number of EVM opcodes, which perform standard stack operations like XOR, AND, ADD, SUB, etc. 
+The EVM also implements a number of blockchain-specific stack operations, such as ADDRESS, BALANCE, BLOCKHASH, etc.
+All Ethereum clients include an EVM implementation.*
+
+https://ethereum.org/en/developers/docs/evm/#evm-instructions:Refrence
+
+
+GAS AND FEES
+Gas refers to the unit that measures the amount of computational effort required to execute specific operations on the Ethereum network.
+Since each Ethereum transaction requires computational resources to execute, each transaction requires a fee. 
+Gas refers to the fee required to conduct a transaction on Ethereum successfully.
+https://ethereum.org/en/developers/docs/gas/: calcuation sample
